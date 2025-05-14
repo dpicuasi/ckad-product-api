@@ -18,7 +18,7 @@ public class ProductController {
     }
 
     @PostMapping
-    @Operation(summary = "Create a product")
+    @Operation(summary = "Create a new product")
     public Mono<ProductResponse> createProduct(@RequestBody ProductRequest request) {
         return productService.createProduct(request);
     }
